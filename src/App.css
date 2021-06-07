@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+
+.App {
+  background-color: #333333;
+  background-image: url('https://i.pinimg.com/564x/83/ee/12/83ee12a81e7ea88b52781b91c8fe5578.jpg');
+  background-size: 50%;
+  position: fixed ;
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+ 
+}
+
+.search {
+  float: right;
+  margin-left: 100px;
+  
+  
+  
+}
+.nav {
+  margin-left: 50px;
+  font-size: larger;
+  color: black;
+  font-family:sans-serif;
+}
+.add {
+  display: flex;
+  flex-wrap: wrap;
+align-items: flex-end;
+margin-left:  1000px; 
+
+}
+.adding{
+  margin: 10px;
+  color: orangered;
+  font-family: fantasy;
+  font-size: 15px;
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+  .App {
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-wrap: wrap;
+    
+  } 
+  .search {
+    display: flex; 
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    color: black;
+    font-family:cursive;
+    
+  }
+  .add {
+   float: right;
+   margin: 50px;
+  }
+  .typewriter {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-family: Faster One;
+  }
+  .mr-auto{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+@media only screen and (max-width: 200px) {
+
+}
