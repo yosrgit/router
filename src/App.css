@@ -2,14 +2,10 @@
 
 
 .App {
-  background-color: #333333;
   background-image: url('https://i.pinimg.com/564x/83/ee/12/83ee12a81e7ea88b52781b91c8fe5578.jpg');
-  background-size: 50%;
-  position: fixed ;
-  top: 0; 
-  left: 0; 
-  min-width: 100%;
-  min-height: 100%;
+  
+
+  
  
 }
 
@@ -30,7 +26,9 @@
   display: flex;
   flex-wrap: wrap;
 align-items: flex-end;
-margin-left:  1000px; 
+margin-left:  650px; 
+margin-bottom: 20px;
+margin-top: 20px;
 
 }
 .adding{

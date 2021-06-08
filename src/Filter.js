@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, FormControl } from 'react-bootstrap'
-import ReactStars from 'react-rating-stars-component'
+import ReactStars from 'react-star-rating-component'
 import "./App.css";
 const Filter = ({handleTitleFilterChange,handleRateFilterChange}) => {
     return (
@@ -10,8 +10,8 @@ const Filter = ({handleTitleFilterChange,handleRateFilterChange}) => {
     <Form inline >
       <FormControl type="text" placeholder="Search by Name" className="mr-sm-2"  
       onChange={(search) => handleTitleFilterChange(search.target.value)}/>   
-      <br/><ReactStars
-    count={5}
+      <br/>
+      <ReactStars  count={5}
     onChange={handleRateFilterChange}
     size={24}
     isHalf={false}
@@ -19,10 +19,9 @@ const Filter = ({handleTitleFilterChange,handleRateFilterChange}) => {
     halfIcon={<i className="fa fa-star-half-alt"></i>}
     fullIcon={<i className="fa fa-star"></i>}
     activeColor="#ffd700"
+/>
 
-
-
-  />
+      
       </Form>
         </div>
       
