@@ -10,12 +10,12 @@ const Add = ({movieAdd}) => {
 const [title, setTitle] = useState('');
 const [posterUrl, setposterUrl] = useState('');
 const [rating, setRating] = useState(0);
-const [description, setDescription] = useState('');
-const [year, setYear] = useState('');
+const [Description, setDescription] = useState('');
+
   return (
-    <>
+    <div>
       <Button variant="warning" onClick={handleShow}>
-        Add a Movie
+         Add a Movie
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -28,7 +28,7 @@ const [year, setYear] = useState('');
         <Form.Control as="textarea" rows={3} placeholder="description" onChange={(e)=>setDescription(e.target.value)}/>
         <Form.Control placeholder="rating" onChange={(e)=>setRating(e.target.value)}/>
        
-        <Form.Control placeholder="year" onChange={(e)=>setYear(e.target.value)}/>
+        
 
         </Modal.Body>
         <Modal.Footer>
@@ -37,12 +37,12 @@ const [year, setYear] = useState('');
             Close
           </Button>
           <Button variant="warning" onClick={()=>{handleClose()
-        movieAdd(title,posterUrl,description,rating,year)}}>
+        movieAdd(title,posterUrl,Description,rating)}}>
             Save
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+      </div>
   );
 };
 
